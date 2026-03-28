@@ -9,7 +9,8 @@ import urllib.request
 import urllib.error
 from dataclasses import dataclass
 
-from parser import Incident, Priority
+from .parser import Incident, Priority
+
 
 
 SLACK_WEBHOOK_URL = os.getenv("SLACK_WEBHOOK_URL", "")

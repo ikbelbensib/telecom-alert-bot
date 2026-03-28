@@ -12,11 +12,8 @@ import argparse
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(__file__))
-
-from parser import parse_log_file
-from alerter import dispatch_incidents
-
+from .parser import parse_log_file
+from .alerter import dispatch_incidents
 
 def main():
     parser = argparse.ArgumentParser(
